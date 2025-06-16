@@ -47,6 +47,6 @@ public class Livro {
     @Override
     public String toString() {
         return String.format("---------- LIVRO ----------\nTítulo: %s\nAutor: %s\nIdioma: %s\nNúmero de downloads: %d\n",
-                titulo, autor.getNome(), idioma, numeroDownloads);
+                titulo, autor != null ? autor.getNome() : "Autor desconhecido", idioma, numeroDownloads == null ? 0 : numeroDownloads);
     }
 }
