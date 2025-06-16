@@ -1,7 +1,6 @@
 package com.challenge.liter.alura.model;
 
 import jakarta.persistence.*;
-import org.springframework.data.annotation.Id;
 
 @Entity
 @Table(name = "livros")

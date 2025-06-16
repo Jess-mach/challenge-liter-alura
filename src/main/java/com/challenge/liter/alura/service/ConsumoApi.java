@@ -11,12 +11,12 @@ public class ConsumoApi {
 
     public String obterDados(String endereco) {
         HttpClient client = HttpClient.newBuilder()
-                .connectTimeout(Duration.ofSeconds(10))
+                .connectTimeout(Duration.ofSeconds(50))
                 .build();
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(endereco))
-                .timeout(Duration.ofSeconds(30))
+                .timeout(Duration.ofSeconds(120))
                 .build();
 
         try {

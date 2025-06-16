@@ -121,7 +121,7 @@ public class ClassePrincipal  {
                 autor = new Autor(nomeAutor,
                         dadosAutor != null ? dadosAutor.anoNascimento() : null,
                         dadosAutor != null ? dadosAutor.anoFalecimento() : null);
-                repositorioAutor.save(autor);
+                autor = repositorioAutor.save(autor);
             }
 
             // Criar e salvar livro
