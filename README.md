@@ -99,26 +99,6 @@ src/
 └── test/                                   # Testes unitários e integração
 ```
 
-### Relacionamentos
-```mermaid
-erDiagram
-    AUTOR ||--o{ LIVRO : "escreve"
-    
-    AUTOR {
-        Long id PK
-        String nome UK
-        Integer anoNascimento
-        Integer anoFalecimento
-    }
-    
-    LIVRO {
-        Long id PK
-        String titulo UK
-        String idioma
-        Integer numeroDownloads
-        Long autor_id FK
-    }
-```
 
 ## 🧪 Executando Testes
 
